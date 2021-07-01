@@ -2,6 +2,12 @@
 
 namespace csharp_tic_tac_toe
 {
+
+    class User
+    {
+        public string Name;
+        public char Symbol;
+    }
     class Board
     {
         private char[,] Grid = new char[3, 3];
