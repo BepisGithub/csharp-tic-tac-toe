@@ -41,6 +41,13 @@ namespace csharp_tic_tac_toe
                 Console.WriteLine(' ');
             }
         }
+        public void Draw(Player player, int[] coords)
+        {
+            if(Grid[coords[0],coords[1]] != ' ')
+            {
+                Console.WriteLine("Sorry, that spot is occupied!");
+            }
+        }
     }
     class Program
     {
