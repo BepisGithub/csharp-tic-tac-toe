@@ -53,7 +53,18 @@ namespace csharp_tic_tac_toe
                 return 1;
             }
         }
-
+        public char HorizontalWinner()
+        {
+            return ' ';
+        }
+        public char VerticalWinner()
+        {
+            return ' ';
+        }
+        public char DiagonalWinner()
+        {
+            return ' ';
+        }
         public char Winner()
         {
 
