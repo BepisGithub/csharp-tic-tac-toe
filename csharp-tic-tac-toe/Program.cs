@@ -4,7 +4,7 @@ namespace csharp_tic_tac_toe
 {
     class Board
     {
-        void Draw()
+        public void Draw()
         {
             Console.WriteLine("TEst");
         }
@@ -13,6 +13,7 @@ namespace csharp_tic_tac_toe
     {
         static void Main(string[] args)
         {
+            Board board = new Board();
             Console.WriteLine("Hello World!");
         }
     }
