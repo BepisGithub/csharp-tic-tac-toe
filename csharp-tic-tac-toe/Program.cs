@@ -67,6 +67,10 @@ namespace csharp_tic_tac_toe
         }
         public char Winner()
         {
+            //Call each of the winner methods
+            //If a winner is found, return the symbol
+            //TODO: Maybe have the two users passed in as parameters
+            //then return the user with the winning symbol
 
             return ' ';
         }
