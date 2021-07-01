@@ -3,12 +3,12 @@
 namespace csharp_tic_tac_toe
 {
 
-    class User
+    class Player
     {
         public string Name;
         public char Symbol;
         
-        public User(string name, char symbol)
+        public Player(string name, char symbol)
         {
             Name = name;
             Symbol = symbol;
