@@ -53,6 +53,12 @@ namespace csharp_tic_tac_toe
                 return 1;
             }
         }
+
+        public char Winner()
+        {
+
+            return ' ';
+        }
     }
     class Program
     {
