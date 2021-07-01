@@ -16,7 +16,7 @@ namespace csharp_tic_tac_toe
                 }
             }
         }
-        public void Draw()
+        public void Display()
         {
             for (int i = 0; i < 3; i++)
             {
@@ -35,7 +35,7 @@ namespace csharp_tic_tac_toe
         static void Main(string[] args)
         {
             Board board = new Board();
-            board.Draw();
+            board.Display();
             Console.WriteLine("Hello World!");
         }
     }
