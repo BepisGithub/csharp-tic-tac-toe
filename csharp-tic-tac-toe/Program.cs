@@ -7,6 +7,12 @@ namespace csharp_tic_tac_toe
     {
         public string Name;
         public char Symbol;
+        
+        public User(string name, char symbol)
+        {
+            Name = name;
+            Symbol = symbol;
+        }
     }
     class Board
     {
