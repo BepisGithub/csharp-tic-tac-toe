@@ -56,9 +56,9 @@ namespace csharp_tic_tac_toe
         public char HorizontalWinner()
         {
             //Check each row from top to bottom
-            for (int Column = 0; Column < 3; Column++)
+            for (int Row = 0; Row < 3; Row++)
             {
-                for (int Row = 0; Row < 3; Row++)
+                if (Grid[0, Row] == Grid[1, Row] && Grid[1, Row] == Grid[2, Row])
                 {
 
                 }
