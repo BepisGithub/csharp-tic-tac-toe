@@ -132,12 +132,18 @@ namespace csharp_tic_tac_toe
             if(Console.ReadKey().Key == ConsoleKey.Y)
             {
                 Console.WriteLine("You would like to play!");
+                Game();
             }
             else
             {
                 Console.WriteLine("Well, see you later!");
                 return;
             }
+        }
+
+        static void Game()
+        {
+
         }
     }
 }
