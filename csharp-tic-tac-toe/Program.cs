@@ -181,6 +181,16 @@ namespace csharp_tic_tac_toe
             Console.WriteLine($"Hey there, {PlayerTwo.Name}");
 
             Board Board = new Board();
+
+            while(Round() == null)
+            {
+                Round();
+            }
+        }
+
+        static Player Round()
+        {
+            return null;
         }
     }
 }
