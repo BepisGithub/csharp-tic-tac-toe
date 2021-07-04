@@ -184,7 +184,7 @@ namespace csharp_tic_tac_toe
 
             while(Round() == null)
             {
-                Round();
+
             }
         }
 
