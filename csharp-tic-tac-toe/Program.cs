@@ -20,22 +20,22 @@ namespace csharp_tic_tac_toe
 
         public Board()
         {
-            for(int i = 0; i < 3; i++)
+            for(int Column = 0; Column < 3; Column++)
             {
-                for (int j = 0; j < 3; j++)
+                for (int Row = 0; Row < 3; Row++)
                 {
-                    Grid[i,j] = ' ';
+                    Grid[Column, Row] = ' ';
                 }
             }
         }
         public void Display()
         {
-            for (int i = 0; i < 3; i++)
+            for (int Column = 0; Column < 3; Column++)
             {
                 Console.Write('|');
-                for (int j = 0; j < 3; j++)
+                for (int Row = 0; Row < 3; Row++)
                 {
-                    Console.Write(Grid[i, j]);
+                    Console.Write(Grid[Column, Row]);
                     Console.Write('|');
                 }
                 Console.WriteLine(' ');
@@ -56,6 +56,13 @@ namespace csharp_tic_tac_toe
         public char HorizontalWinner()
         {
             //Check each row from top to bottom
+            for (int Column = 0; Column < 3; Column++)
+            {
+                for (int Row = 0; Row < 3; Row++)
+                {
+
+                }
+            }
             return ' ';
         }
         public char VerticalWinner()
