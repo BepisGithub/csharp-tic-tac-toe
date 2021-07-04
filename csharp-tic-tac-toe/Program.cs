@@ -30,10 +30,10 @@ namespace csharp_tic_tac_toe
         }
         public void Display()
         {
-            for (int Column = 0; Column < 3; Column++)
+            for (int Row = 2; Row >= 0; Row--)
             {
                 Console.Write('|');
-                for (int Row = 0; Row < 3; Row++)
+                for (int Column = 0; Column < 3; Column++)
                 {
                     Console.Write(Grid[Column, Row]);
                     Console.Write('|');
