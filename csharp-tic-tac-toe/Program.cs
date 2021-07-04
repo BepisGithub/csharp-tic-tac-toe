@@ -180,6 +180,17 @@ namespace csharp_tic_tac_toe
             Player PlayerTwo = new Player(PlayerTwoName, 'o');
             Console.WriteLine($"Hey there, {PlayerTwo.Name}");
 
+            //Randomly make a player active
+            var random = new Random();
+            if(random.Next(0, 10) % 2 == 0)
+            {
+                PlayerOne.Active = true;
+            }
+            else
+            {
+                PlayerTwo.Active = true;
+            }
+
             Board Board = new Board();
             Player Winner = Round();
             while(Winner == null)
