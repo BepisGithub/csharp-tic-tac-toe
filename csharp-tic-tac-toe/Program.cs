@@ -19,17 +19,17 @@ namespace csharp_tic_tac_toe
         public int[] GetCoordChoice()
         {
             Console.WriteLine("What is the x coordinate you would like to choose? (The bottom left pos is 0, 0 for x and y)");
-            int x = Convert.ToInt32(Console.ReadKey());
+            int x = Convert.ToInt32(Console.ReadLine());
             while(x < 0 || x > 2)
             {
-                x = Convert.ToInt32(Console.ReadKey());
+                x = Convert.ToInt32(Console.ReadLine());
             }
 
             Console.WriteLine("What is the y coordinate you would like to choose? (The bottom left pos is 0, 0 for x and y)");
-            int y = Convert.ToInt32(Console.ReadKey());
+            int y = Convert.ToInt32(Console.ReadLine());
             while (y < 0 || y > 2)
             {
-                y = Convert.ToInt32(Console.ReadKey());
+                y = Convert.ToInt32(Console.ReadLine());
             }
 
             int[] Coords = new int[] { x, y };
