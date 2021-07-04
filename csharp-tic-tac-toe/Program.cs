@@ -22,6 +22,7 @@ namespace csharp_tic_tac_toe
             int x = Convert.ToInt32(Console.ReadLine());
             while(x < 0 || x > 2)
             {
+                Console.WriteLine("Oops, that doesn\'t seem to be valid! Try again");
                 x = Convert.ToInt32(Console.ReadLine());
             }
 
@@ -29,6 +30,7 @@ namespace csharp_tic_tac_toe
             int y = Convert.ToInt32(Console.ReadLine());
             while (y < 0 || y > 2)
             {
+                Console.WriteLine("Oops, that doesn\'t seem to be valid! Try again");
                 y = Convert.ToInt32(Console.ReadLine());
             }
 
