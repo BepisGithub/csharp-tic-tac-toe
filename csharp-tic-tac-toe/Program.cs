@@ -15,6 +15,18 @@ namespace csharp_tic_tac_toe
             Name = name;
             Symbol = symbol;
         }
+
+        public int[] GetCoordChoice()
+        {
+            Console.WriteLine("What is the x coordinate you would like to choose");
+            int x = Convert.ToInt32(Console.ReadKey());
+
+            Console.WriteLine("What is the y coordinate you would like to choose");
+            int y = Convert.ToInt32(Console.ReadKey());
+
+            int[] Coords = new int[] { x, y };
+            return Coords;
+        }
     }
     class Board
     {
