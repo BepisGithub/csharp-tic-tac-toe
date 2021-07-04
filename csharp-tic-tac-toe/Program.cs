@@ -170,11 +170,13 @@ namespace csharp_tic_tac_toe
 
         static void Game()
         {
+            //Create first player
             Console.WriteLine("What is your name, player 1?:");
             string PlayerOneName = Console.ReadLine();
             Player PlayerOne = new Player(PlayerOneName, 'x');
             Console.WriteLine($"Hey there, {PlayerOne.Name}");
 
+            //Create second player
             Console.WriteLine("What is your name, player 2?:");
             string PlayerTwoName = Console.ReadLine();
             Player PlayerTwo = new Player(PlayerTwoName, 'o');
