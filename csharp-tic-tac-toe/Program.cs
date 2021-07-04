@@ -72,6 +72,17 @@ namespace csharp_tic_tac_toe
         public char VerticalWinner()
         {
             //Check each column from left to right
+            for (int Column = 0; Column < 3; Column++)
+            {
+                if (Grid[Column, 0] == ' ') //If the column has one space, there can't be a winner
+                {
+                    continue; //Skip to the next iteration of the for loop
+                }
+                if (Grid[Column, 0] == Grid[Column, 1] && Grid[Column, 1] == Grid[Column, 2]) //If all items in the row are the same
+                {
+                    return Grid[Column, 0]; //Return the symbol of the winner
+                }
+            }
             return ' ';
         }
         public char DiagonalWinner()
