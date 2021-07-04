@@ -8,7 +8,7 @@ namespace csharp_tic_tac_toe
         public string Name { get; set; }
         public char Symbol { get; set; }
 
-        public bool Active = true;
+        public bool Active = false;
 
         public Player(string name, char symbol)
         {
