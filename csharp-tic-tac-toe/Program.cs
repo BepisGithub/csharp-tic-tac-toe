@@ -92,6 +92,14 @@ namespace csharp_tic_tac_toe
             {
                 return ' '; //Skip to the next iteration of the for loop
             }
+            if (Grid[0, 0] == Grid[1, 1] && Grid[1, 1] == Grid[2, 2])
+            {
+                return Grid[0, 0];
+            }
+            if (Grid[2, 0] == Grid[1, 1] && Grid[1, 1] == Grid[0, 2])
+            {
+                return Grid[0, 0];
+            }
             return ' ';
         }
         public char Winner()
