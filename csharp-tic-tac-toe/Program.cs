@@ -62,9 +62,9 @@ namespace csharp_tic_tac_toe
                 {
                     continue; //Skip to the next iteration of the for loop
                 }
-                if (Grid[0, Row] == Grid[1, Row] && Grid[1, Row] == Grid[2, Row])
+                if (Grid[0, Row] == Grid[1, Row] && Grid[1, Row] == Grid[2, Row]) //If all items in the row are the same
                 {
-                    return Grid[0, Row];
+                    return Grid[0, Row]; //Return the symbol of the winner
                 }
             }
             return ' ';
