@@ -64,7 +64,7 @@ namespace csharp_tic_tac_toe
                 }
                 if (Grid[0, Row] == Grid[1, Row] && Grid[1, Row] == Grid[2, Row])
                 {
-
+                    return Grid[0, Row];
                 }
             }
             return ' ';
