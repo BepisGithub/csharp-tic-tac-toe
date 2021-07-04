@@ -96,6 +96,11 @@ namespace csharp_tic_tac_toe
             {
                 Console.WriteLine("You would like to play!");
             }
+            else
+            {
+                Console.WriteLine("Well, see you later!");
+                return;
+            }
         }
     }
 }
