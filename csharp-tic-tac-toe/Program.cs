@@ -129,13 +129,16 @@ namespace csharp_tic_tac_toe
         {
             Console.WriteLine("Hello there, welcome to my tic tac toe game!");
             Console.WriteLine("Would you like to play? y/n");
-            if(Console.ReadKey().Key == ConsoleKey.Y)
+            if (Console.ReadKey().Key == ConsoleKey.Y)
             {
+                Console.WriteLine();
                 Console.WriteLine("You would like to play!");
+
                 Game();
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine("Well, see you later!");
                 return;
             }
