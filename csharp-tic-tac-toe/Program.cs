@@ -55,14 +55,17 @@ namespace csharp_tic_tac_toe
         }
         public char HorizontalWinner()
         {
+            //Check each row from top to bottom
             return ' ';
         }
         public char VerticalWinner()
         {
+            //Check each column from left to right
             return ' ';
         }
         public char DiagonalWinner()
         {
+            //Check both diagonal directions
             return ' ';
         }
         public char Winner()
