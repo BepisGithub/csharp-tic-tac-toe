@@ -69,12 +69,20 @@ namespace csharp_tic_tac_toe
         {
             //Call each of the winner methods
             char HWinner = HorizontalWinner();
+            if (HWinner != ' ')
+            {
+                return HWinner;
+            }
             char VWinner = VerticalWinner();
+            if (VWinner != ' ')
+            {
+                return VWinner;
+            }
             char DWinner = DiagonalWinner();
-            //If a winner is found, return the symbol
-            //TODO: Maybe have the two users passed in as parameters
-            //then return the user with the winning symbol
-
+            if (DWinner != ' ')
+            {
+                return DWinner;
+            }
             return ' ';
         }
     }
