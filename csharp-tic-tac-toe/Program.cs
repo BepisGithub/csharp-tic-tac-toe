@@ -68,6 +68,9 @@ namespace csharp_tic_tac_toe
         public char Winner()
         {
             //Call each of the winner methods
+            char HWinner = HorizontalWinner();
+            char VWinner = VerticalWinner();
+            char DWinner = DiagonalWinner();
             //If a winner is found, return the symbol
             //TODO: Maybe have the two users passed in as parameters
             //then return the user with the winning symbol
