@@ -5,8 +5,8 @@ namespace csharp_tic_tac_toe
 
     class Player
     {
-        public string Name;
-        public char Symbol;
+        public string Name { get; set; }
+        public char Symbol { get; set; }
         
         public Player(string name, char symbol)
         {
