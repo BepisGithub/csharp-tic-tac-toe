@@ -156,7 +156,7 @@ namespace csharp_tic_tac_toe
             Player PlayerTwo = new Player(PlayerTwoName, 'o');
             Console.WriteLine($"Hey there, {PlayerTwo.Name}");
 
-            Board board = new Board();
+            Board Board = new Board();
         }
     }
 }
