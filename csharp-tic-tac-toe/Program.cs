@@ -24,7 +24,7 @@ namespace csharp_tic_tac_toe
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    Grid[i,j] = 'd';
+                    Grid[i,j] = ' ';
                 }
             }
         }
