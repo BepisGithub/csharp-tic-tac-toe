@@ -58,6 +58,10 @@ namespace csharp_tic_tac_toe
             //Check each row from top to bottom
             for (int Row = 0; Row < 3; Row++)
             {
+                if(Grid[0, Row] == ' ') //If the row has one space, there can't be a winner
+                {
+                    continue; //Skip to the next iteration of the for loop
+                }
                 if (Grid[0, Row] == Grid[1, Row] && Grid[1, Row] == Grid[2, Row])
                 {
 
