@@ -88,7 +88,7 @@ namespace csharp_tic_tac_toe
         public char DiagonalWinner()
         {
             //Check both diagonal directions
-            if (Grid[1, 1] == ' ') //If the column has one space, there can't be a winner
+            if (Grid[1, 1] == ' ') //If the center doesn't have a symbol, there can't be a winner
             {
                 return ' '; //Skip to the next iteration of the for loop
             }
