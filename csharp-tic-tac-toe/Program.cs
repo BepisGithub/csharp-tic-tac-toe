@@ -222,8 +222,8 @@ namespace csharp_tic_tac_toe
             }
 
             Board Board = new Board();
-            Player Winner = Round(PlayerOne, PlayerTwo, Board);
-            while(Winner == null)
+            char Winner = Round(PlayerOne, PlayerTwo, Board);
+            while(Winner == ' ')
             {
                 //Swap active players after each round
                 Board.Display();
@@ -241,7 +241,7 @@ namespace csharp_tic_tac_toe
             }
         }
 
-        static Player Round(Player P1, Player P2, Board Board)
+        static Char Round(Player P1, Player P2, Board Board)
         {
             Player Active;
             //Determine active player
@@ -263,14 +263,7 @@ namespace csharp_tic_tac_toe
             } while(CoordResult == -1);
             //Check for a winner
             char WinnerResult = Board.Winner();
-            if(WinnerResult == ' ')
-            {
-                return null;
-            }
-            else
-            {
-                //return value that indicates the winner
-            }
+            return WinnerResult;
         }
     }
 }
