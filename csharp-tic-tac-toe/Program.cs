@@ -128,6 +128,21 @@ namespace csharp_tic_tac_toe
             }
             return ' ';
         }
+        public char Tie()
+        {
+            for(int i = 0; i < 3; i++)
+            {
+                for(int j = 0; j < 3; j++)
+                {
+                    if (Grid[i, j] == ' ')
+                    {
+                        return ' ';
+                    }
+                }
+            }
+            return 'd';
+        }
+
         public char Winner()
         {
             //Call each of the winner methods
