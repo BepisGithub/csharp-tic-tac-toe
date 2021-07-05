@@ -194,12 +194,12 @@ namespace csharp_tic_tac_toe
             }
 
             Board Board = new Board();
-            Player Winner = Round(PlayerOne, PlayerTwo);
+            Player Winner = Round(PlayerOne, PlayerTwo, Board);
             while(Winner == null)
             {
                 //Swap active players after each round
                 Board.Display();
-                Winner = Round(PlayerOne, PlayerTwo);
+                Winner = Round(PlayerOne, PlayerTwo, Board);
                 if (PlayerOne.Active)
                 {
                     PlayerOne.Active = false;
@@ -213,7 +213,7 @@ namespace csharp_tic_tac_toe
             }
         }
 
-        static Player Round(Player P1, Player P2)
+        static Player Round(Player P1, Player P2, Board Board)
         {
             Player Active;
             //Determine active player
