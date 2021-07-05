@@ -284,6 +284,29 @@ namespace csharp_tic_tac_toe
             {
                 Console.WriteLine($"{P2.Name} is the winner!");
             }
+            Console.WriteLine("Would you like to play again? (y/n)");
+            if (Console.ReadKey().Key == ConsoleKey.Y)
+            {
+                Console.WriteLine();
+                Console.WriteLine("With the same players? (y/n)");
+                if (Console.ReadKey().Key == ConsoleKey.Y)
+                {
+                    Console.WriteLine();
+                    Board Board = new Board();
+                    Game(P1, P2, Board);
+                }
+                else
+                {
+                    Console.WriteLine();
+                    InitialiseVariables();
+                }
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("Well, see you later!");
+                return;
+            }
         }
     }
 }
