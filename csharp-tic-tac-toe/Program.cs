@@ -199,6 +199,16 @@ namespace csharp_tic_tac_toe
             {
                 //Swap active players after each round
                 Winner = Round(PlayerOne, PlayerTwo);
+                if (PlayerOne.Active)
+                {
+                    PlayerOne.Active = false;
+                    PlayerTwo.Active = true;
+                }
+                else
+                {
+                    PlayerOne.Active = true;
+                    PlayerTwo.Active = false;
+                }
             }
         }
 
