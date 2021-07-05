@@ -18,7 +18,7 @@ namespace csharp_tic_tac_toe
 
         public int[] GetCoordChoice()
         {
-            Console.WriteLine($"Your symbol is {Symbol}");
+            Console.WriteLine($"Your symbol is {Symbol}, {Name}");
 
             Console.WriteLine("What is the x coordinate you would like to choose? (The bottom left pos is 0, 0 for x and y)");
             int x = Convert.ToInt32(Console.ReadLine());
