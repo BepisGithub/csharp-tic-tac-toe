@@ -197,12 +197,14 @@ namespace csharp_tic_tac_toe
             Player Winner = Round();
             while(Winner == null)
             {
+                //Swap active players after each round
                 Winner = Round();
             }
         }
 
         static Player Round()
         {
+            //Determine active player
             return null;
         }
     }
