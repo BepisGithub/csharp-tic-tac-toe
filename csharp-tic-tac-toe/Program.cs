@@ -265,5 +265,20 @@ namespace csharp_tic_tac_toe
             //Check for a winner
             return Board.Winner();
         }
+
+        static void DetermineResult(Player P1, Player P2, char Result)
+        {
+            if(Result == 'd')
+            {
+                Console.WriteLine("The game ended in a draw!");
+            }else if(Result == P1.Symbol)
+            {
+                Console.WriteLine($"{P1.Name} is the winner!");
+            }
+            else
+            {
+                Console.WriteLine($"{P2.Name} is the winner!");
+            }
+        }
     }
 }
