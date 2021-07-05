@@ -198,6 +198,7 @@ namespace csharp_tic_tac_toe
             while(Winner == null)
             {
                 //Swap active players after each round
+                Board.Display();
                 Winner = Round(PlayerOne, PlayerTwo);
                 if (PlayerOne.Active)
                 {
