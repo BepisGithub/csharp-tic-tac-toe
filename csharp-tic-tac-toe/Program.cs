@@ -145,21 +145,23 @@ namespace csharp_tic_tac_toe
 
         public char Winner()
         {
+
+            char Result;
             //Call each of the winner methods
-            char HWinner = HorizontalWinner();
-            if (HWinner != ' ')
+            Result = HorizontalWinner();
+            if (Result != ' ')
             {
-                return HWinner;
+                return Result;
             }
-            char VWinner = VerticalWinner();
-            if (VWinner != ' ')
+            Result = VerticalWinner();
+            if (Result != ' ')
             {
-                return VWinner;
+                return Result;
             }
-            char DWinner = DiagonalWinner();
-            if (DWinner != ' ')
+            Result = DiagonalWinner();
+            if (Result != ' ')
             {
-                return DWinner;
+                return Result;
             }
             return ' ';
         }
