@@ -225,6 +225,14 @@ namespace csharp_tic_tac_toe
             {
                 Active = P2;
             }
+
+            int result;
+            int[] Coords;
+            do
+            {
+                Coords = Active.GetCoordChoice();
+                result = Board.Draw(Active, Coords);
+            } while(result == -1);
             return null;
         }
     }
