@@ -227,7 +227,7 @@ namespace csharp_tic_tac_toe
 
         static void Game(Player PlayerOne, Player PlayerTwo, Board Board)
         {
-            char Winner = Round(PlayerOne, PlayerTwo, Board);
+            char Winner = ' ';
             Board.Display();
             while (Winner == ' ')
             {
