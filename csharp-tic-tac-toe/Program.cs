@@ -262,7 +262,15 @@ namespace csharp_tic_tac_toe
                 CoordResult = Board.Draw(Active, Coords);
             } while(CoordResult == -1);
             //Check for a winner
-            return null;
+            char WinnerResult = Board.Winner();
+            if(WinnerResult == ' ')
+            {
+                return null;
+            }
+            else
+            {
+                //return value that indicates the winner
+            }
         }
     }
 }
