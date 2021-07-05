@@ -223,11 +223,12 @@ namespace csharp_tic_tac_toe
 
             Board Board = new Board();
             char Winner = Round(PlayerOne, PlayerTwo, Board);
-            while(Winner == ' ')
+            Board.Display();
+            while (Winner == ' ')
             {
                 //Swap active players after each round
-                Board.Display();
                 Winner = Round(PlayerOne, PlayerTwo, Board);
+                Board.Display();
                 if (PlayerOne.Active)
                 {
                     PlayerOne.Active = false;
