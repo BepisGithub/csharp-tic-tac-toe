@@ -194,15 +194,15 @@ namespace csharp_tic_tac_toe
             }
 
             Board Board = new Board();
-            Player Winner = Round();
+            Player Winner = Round(PlayerOne, PlayerTwo);
             while(Winner == null)
             {
                 //Swap active players after each round
-                Winner = Round();
+                Winner = Round(PlayerOne, PlayerTwo);
             }
         }
 
-        static Player Round()
+        static Player Round(Player P1, Player P2)
         {
             //Determine active player
             return null;
