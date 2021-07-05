@@ -186,7 +186,7 @@ namespace csharp_tic_tac_toe
                 Console.WriteLine();
                 Console.WriteLine("You would like to play!");
 
-                Game();
+                InitialiseVariables();
             }
             else
             {
@@ -196,7 +196,7 @@ namespace csharp_tic_tac_toe
             }
         }
 
-        static void Game()
+        static void InitialiseVariables()
         {
             //Create first player
             Console.WriteLine("What is your name, player 1?:");
@@ -212,7 +212,7 @@ namespace csharp_tic_tac_toe
 
             //Randomly make a player active
             var random = new Random();
-            if(random.Next(0, 10) % 2 == 0)
+            if (random.Next(0, 10) % 2 == 0)
             {
                 PlayerOne.Active = true;
             }
@@ -222,6 +222,11 @@ namespace csharp_tic_tac_toe
             }
 
             Board Board = new Board();
+            Game(PlayerOne, PlayerTwo, Board);
+        }
+
+        static void Game(Player PlayerOne, Player PlayerTwo, Board Board)
+        {
             char Winner = Round(PlayerOne, PlayerTwo, Board);
             Board.Display();
             while (Winner == ' ')
