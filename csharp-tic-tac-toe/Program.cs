@@ -262,8 +262,7 @@ namespace csharp_tic_tac_toe
                 CoordResult = Board.Draw(Active, Coords);
             } while(CoordResult == -1);
             //Check for a winner
-            char WinnerResult = Board.Winner();
-            return WinnerResult;
+            return Board.Winner();
         }
     }
 }
