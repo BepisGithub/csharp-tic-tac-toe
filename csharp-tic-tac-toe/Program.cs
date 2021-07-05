@@ -163,6 +163,15 @@ namespace csharp_tic_tac_toe
             {
                 return Result;
             }
+            /*At this point, no winners have been determined.
+             *So that means, if the board is full, and there are no winners
+             *It must be a tie. So let's check if the board is full
+            */
+            Result = Tie();
+            if (Result != ' ')
+            {
+                return Result;
+            }
             return ' ';
         }
     }
