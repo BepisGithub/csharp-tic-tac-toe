@@ -205,6 +205,14 @@ namespace csharp_tic_tac_toe
         static Player Round(Player P1, Player P2)
         {
             //Determine active player
+            if (P1.Active)
+            {
+                Player Active = P1;
+            }
+            else
+            {
+                Player Active = P2;
+            }
             return null;
         }
     }
