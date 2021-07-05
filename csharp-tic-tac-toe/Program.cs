@@ -20,23 +20,23 @@ namespace csharp_tic_tac_toe
         {
             Console.WriteLine($"Your symbol is {Symbol}, {Name}");
 
-            Console.WriteLine("What is the x coordinate you would like to choose? (The bottom left pos is 0, 0 for x and y)");
+            Console.WriteLine("What is the x coordinate you would like to choose?");
             int x = Convert.ToInt32(Console.ReadLine());
-            while(x < 0 || x > 2)
+            while(x < 1 || x > 3)
             {
                 Console.WriteLine("Oops, that doesn\'t seem to be valid! Try again");
                 x = Convert.ToInt32(Console.ReadLine());
             }
 
-            Console.WriteLine("What is the y coordinate you would like to choose? (The bottom left pos is 0, 0 for x and y)");
+            Console.WriteLine("What is the y coordinate you would like to choose?");
             int y = Convert.ToInt32(Console.ReadLine());
-            while (y < 0 || y > 2)
+            while (y < 1 || y > 3)
             {
                 Console.WriteLine("Oops, that doesn\'t seem to be valid! Try again");
                 y = Convert.ToInt32(Console.ReadLine());
             }
 
-            int[] Coords = new int[] { x, y };
+            int[] Coords = new int[] { --x, --y };
             return Coords;
         }
     }
