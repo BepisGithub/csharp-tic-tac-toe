@@ -245,6 +245,7 @@ namespace csharp_tic_tac_toe
                     PlayerTwo.Active = false;
                 }
             }
+            DetermineResult(PlayerOne, PlayerTwo, Winner);
         }
 
         static Char Round(Player P1, Player P2, Board Board)
