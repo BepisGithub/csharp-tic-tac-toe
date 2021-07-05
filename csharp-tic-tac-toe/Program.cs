@@ -254,13 +254,13 @@ namespace csharp_tic_tac_toe
                 Active = P2;
             }
             //Get position choice, and place the symbol
-            int result;
+            int CoordResult;
             int[] Coords;
             do
             {
                 Coords = Active.GetCoordChoice();
-                result = Board.Draw(Active, Coords);
-            } while(result == -1);
+                CoordResult = Board.Draw(Active, Coords);
+            } while(CoordResult == -1);
             //Check for a winner
             return null;
         }
